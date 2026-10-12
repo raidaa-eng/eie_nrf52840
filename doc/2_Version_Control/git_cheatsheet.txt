@@ -1,0 +1,32 @@
+1. git commit
+Definition: Saves a snapshot of staged changes to local git repository
+Arguments: --amend (modifies last commit) or --include (stages speicifc files you list at the end of the command right before committing them)
+
+2. git branch
+Definition: Lightweight, moveable pointer to a specific commit. Creates a isolated/parallel workspace, without affecting main project code.
+Arguments: --all (list both local and remote-tracking branches) or --merged (lists branches that been fully merged into your current branch)
+
+3. git checkout 
+Definition: Used to navigate between different branches, updates the files in your working directory to match a specific version fro your repository's history. 
+Arguments: -b (creates new branch and immediately switches to it) or - (convenient shortcut to switch back to switch back to previously checked-out branch)
+
+4. git pull 
+Definition: Used to download the latest changes from a remote repository and immediately integrate them into your local working branch.
+Arguments: <repository> (specifies the remote repositiroy to pull from (e.g. origin) or defaults to configured upstream branch or origin.) or --rebase (applies your local commits on top of the incoming remote commits instead of creatibng a merge commit)
+
+5. git push 
+Definition: Command used to upload local repository content to a remote repository.
+Arguments: -u/--set-upstream (links local branch to remote branch. Then type git push/git pull without specifying remote or branch names in future)
+
+6. git merge 
+Definition: Command used to combine branches into a single branch.
+Arguments: <commit>... (the branch or commits you want to merge ibnto your current checked-out branch) or --ff (Fast forward merge, if target branch is linear descendant of current brnach, moves pointer forward without creating new merge commit)
+
+7. git rebase 
+Definition: Used to integrate changes from one branch into another by moving or "replaying" sequence of commits on top of a new base commit.
+Arguments: <upstream> (takes all commits of current branch that are not in <upstream> and replays them on top of <upstream>) or <upstream> <branch> (automatically switches (checkouts) to <branch> first, then rebases it onto <upstream>)
+
+8. git fetch 
+Definition: Downloads the latest commits, files, refs, and branches from a remote repository to your local machine, w/o altering/mergy them into actual working code.
+Arguments: <repository> (specify a designated remote) or --all (fetches updates from all configured remotes simultaneously)
+
