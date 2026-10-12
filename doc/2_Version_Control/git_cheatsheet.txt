@@ -30,3 +30,18 @@ Arguments: <upstream> (takes all commits of current branch that are not in <upst
 Definition: Downloads the latest commits, files, refs, and branches from a remote repository to your local machine, w/o altering/mergy them into actual working code.
 Arguments: <repository> (specify a designated remote) or --all (fetches updates from all configured remotes simultaneously)
 
+9. git add 
+Definition: Move chnages from working directory to the staging area. Prepares modified, new, or deleted files, so they can be included in the next commit. 
+Arguments: <filename> (stages a specific file) or -A (Stages every chage across the entire repository, regardless of which directory you are currently standing in)
+
+10. git status
+Definition: Displays the current state of your Git working directory and staging area. 
+Arguments: -s (output in a clean, compart short-format) or -b (shows branch and tracking info)
+
+11. git log 
+Definition: Used to view the commit history of a Git repository 
+Arguments: --oneline (condenses each commit into single line) or --graph (Draws a text-based ASCII representing the branch and merge history on left side of the log)
+
+12. git diff
+Definition: Comapres different states of a Git repository. Shows all unstaged changes you have made since your last git add.
+Arguments: --staged (all staged changes that are ready to be committed) or HEAD (all local changed combined - both staged and unstaged)
